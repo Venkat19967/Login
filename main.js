@@ -1,12 +1,15 @@
 var express = require('express');
 var app = express();
 var fs = require('fs');
-var Datastore = require('nedb');                                                       
-var db = new Datastore({filename: 'store.db', autoload: true});                                                                  
+var Datastore = require('nedb');
+var db = new Datastore({filename: 'store.db', autoload: true});
 var bodyParser = require('body-parser');
 app.use(bodyParser());
+var bootstrap = require('bootstrap');
 
-
+app.use(express.static('css'));
+app.use(express.static('js'));
+app.use(express.static('fonts'));
 
 
 
@@ -23,6 +26,7 @@ app.get('/signup', function (req, res) {
 
 //this will display the login page
 fs.readFile('index.html',  function(err, contents) {
+
     app.get('/', function (req, res) {
       res.send(contents.toString());
     });
@@ -35,7 +39,7 @@ fs.readFile('index.html',  function(err, contents) {
 //this manage the authentication part and route to /hello stating successful or not successful
 app.post('/hello', function (req, res) {
   db.find({username:req.body.usrname,password:req.body.pass}, function(err,result){
-  		
+
           if(err) throw err;
 
         	if(result.length==0)
@@ -47,7 +51,7 @@ app.post('/hello', function (req, res) {
           '<form action="/signup" method="get">'+
           '<input type="submit" value="signup">'+
           '<form>');
-      		
+
       	     }
 
 	     else{
