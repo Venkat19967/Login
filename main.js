@@ -5,14 +5,16 @@ var Datastore = require('nedb');
 var db = new Datastore({filename: 'store.db', autoload: true});
 var bodyParser = require('body-parser');
 app.use(bodyParser());
-var bootstrap = require('bootstrap');
-
-app.use(express.static('css'));
-app.use(express.static('js'));
-app.use(express.static('fonts'));
 
 
+// var bootstrap = require('bootstrap');
 
+// app.use(express.static('/Users/venkat/Desktop/login/css'));
+// app.use(express.static('/Users/venkat/Desktop/login/js'));
+// app.use(express.static('/Users/venkat/Desktop/login/fonts'));
+// app.use(/public, express.static('/Users/venkat/Desktop/login'));
+
+app.use(express.static(__dirname + '/public'));
 //this will display the signup page
 app.get('/signup', function (req, res) {
   fs.readFile('two.html',  function(err, contents) {
@@ -31,6 +33,7 @@ fs.readFile('index.html',  function(err, contents) {
       res.send(contents.toString());
     });
 });
+
 
 
 
