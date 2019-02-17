@@ -1,25 +1,25 @@
 {
   "name": "login",
   "version": "1.0.0",
-  "description": "first node file",
-  "main": “server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-     "start": "node server.js"
-  },
-  "author": "Venkat",
-  "license": "ISC",
+  "description": "This is a basic login page implemented using NodeJS. This will do the basic authentication. Version 1.0",
+  "main": "server.js",
   "dependencies": {
-    "bootstrap": "^3.3.7",
     "express": "^4.16.4",
-    "jquery": "^3.1.0",
     "nedb": "^1.8.0"
   },
   "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://venkatss10@bitbucket.org/venkatss10/login.git"
+    "url": "git+https://github.com/Venkat19967/Login.git"
   },
-  "homepage": "https://bitbucket.org/venkatss10/login#readme"
-
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Venkat19967/Login/issues"
+  },
+  "homepage": "https://github.com/Venkat19967/Login#readme"
 }
