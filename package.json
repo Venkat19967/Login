@@ -20,4 +20,7 @@
     "url": "git+https://venkatss10@bitbucket.org/venkatss10/login.git"
   },
   "homepage": "https://bitbucket.org/venkatss10/login#readme"
+"scripts": {
+    "start": "node main.js"
+}
 }
