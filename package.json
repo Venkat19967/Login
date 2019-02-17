@@ -4,7 +4,8 @@
   "description": "first node file",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "start": "node main.js"
   },
   "author": "Venkat",
   "license": "ISC",
@@ -20,7 +21,5 @@
     "url": "git+https://venkatss10@bitbucket.org/venkatss10/login.git"
   },
   "homepage": "https://bitbucket.org/venkatss10/login#readme"
-"scripts": {
-    "start": "node main.js"
-}
+
 }
