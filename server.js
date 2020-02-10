@@ -4,8 +4,9 @@ var fs = require('fs');
 var Datastore = require('nedb');
 var db = new Datastore({filename: 'store.db', autoload: true});
 var bodyParser = require('body-parser');
-app.use(bodyParser());
-
+//app.use(bodyParser());
+app.use(bodyParser.urlencoded());
+app.use(bodyParser.json());
 
 // var bootstrap = require('bootstrap');
 
