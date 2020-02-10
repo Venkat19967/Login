@@ -102,8 +102,7 @@ var p = req.body.pass;
 });
 
 
-
 //this function will run the server on port 3000
-//app.listen(3000, function () {
-//  console.log('The webapp is running on 3000 port');
-//});
+app.listen(3000, function () {
+  console.log('The webapp is running on 3000 port');
+});
