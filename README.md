@@ -21,13 +21,13 @@ Have minikube istalled
 Have a VM installed
 Instructions to run:
 
-Pull the image from Docker Hub `docker pull venkat19967/login` or clone this repo and run `docker build .`
-Navigate to cloned folder
-Run `npm install`
-Run `minikube start` wait till the cluster is up and running
-Run `node main.js`
-Get the service URL by running:  `minikube service --url login`
-Copy paste the URL in the browser to access the webapp
+1. Pull the image from Docker Hub `docker pull venkat19967/login` or clone this repo and run `docker build .`
+2. Navigate to cloned folder
+3. Run `npm install`
+4. Run `minikube start` wait till the cluster is up and running
+5. Run `node main.js`
+6. Get the service URL by running:  `minikube service --url login`
+7. Copy paste the URL in the browser to access the webapp
 
 
 
